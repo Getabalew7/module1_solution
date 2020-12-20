@@ -20,16 +20,10 @@
             }
             if (count == 0) {
                 $scope.message = "Please enter data first!";// if not data entered
-                classname.remove("withMessage");
-                classname.add("emptyMessage")
             } else if (count <= 3) {
                 $scope.message = "Enjoy!";// 1,2 or 3 list of lunches
-                classname.add("withMessage");
-                classname.remove("emptyMessage")
             } else {
                 $scope.message = "Too much!"; // more than3 lunch items
-                classname.add("withMessage");
-                classname.remove("emptyMessage")
             }
             console.log("you have listed  "+ count+" lunch of items ");
         };

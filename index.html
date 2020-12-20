@@ -12,12 +12,14 @@
       font-size: 1.3em;
       font-weight: bold;
     }
-    .emptyMessage{
-      color:red;
+
+    .emptyMessage {
+      color: red;
       border: 1px solid red;
     }
-    .withMessage{
-      color:green;
+
+    .withMessage {
+      color: green;
       border: 1px solid green;
     }
   </style>
@@ -39,9 +41,9 @@
         <div class="form-group">
           <button class="btn btn-success" ng-click="countLunchList();">Check If Too Much</button>
         </div>
-        <div class="form-group message" id="message">
+        <div class="form-group message" id="message" ng-bind="message">
           <!-- Your message can go here. -->
-          {{ message}}
+         
         </div>
       </div>
       <div class="col-md-3">
